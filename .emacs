@@ -36,6 +36,7 @@
 
 (require 'multi-term)
 (setq multi-term-program "/bin/zsh")
+(setq multi-term-scroll-show-maximum-output t)
 
 ;; Powerline
 (require 'powerline)
@@ -99,6 +100,8 @@
 
 ;; Variables
 (setq backup-by-copying-when-linked t)
+;; Fix issue for not showing auto complete content in zsh
+(setq term-scroll-show-maximum-output t)
 
 
 ;; END
